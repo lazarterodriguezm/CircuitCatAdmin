@@ -28,7 +28,9 @@ export class ScanQrPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ScanQrPage');
+  }
 
+  scanQR() {
     this.barcodeScanner.scan(this.options).then(barcodeData => {
       console.log('Cancelled: ', barcodeData.cancelled);
       console.log('Format: ', barcodeData.format);
